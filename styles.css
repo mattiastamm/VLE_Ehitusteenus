@@ -1,0 +1,53 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: #BBB2A6;
+}
+
+header {
+    background-color: #BBB2A6;
+}
+
+/* Landing Image Section */
+.landing-image {
+    background-image: url('images/landing_page.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+.landing-image .btn {
+    position: relative;
+    z-index: 1;
+    background-color: #DBAA69;
+    font-weight: bold;
+}
+
+/* Services Buttons */
+.service-btn {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #DBDDDD;
+}
+
+.service-btn i {
+    color: black;
+}
+
+/* Footer Section */
+footer .social-icons a {
+    text-decoration: none;
+}
+
+footer h5 {
+    font-weight: bold;
+}

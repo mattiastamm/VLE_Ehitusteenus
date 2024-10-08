@@ -1,0 +1,65 @@
+/* Hamburger Icon Styles */
+.hamburger-wrapper {
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.hamburger-icon {
+    display: block; /* Display as a block */
+    width: 100%; /* Full width for easier clicking */
+    height: 3px; /* Height for the lines */
+    background-color: #333; /* Color of the lines */
+    position: relative; /* Position relative to parent */
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: "";
+    display: block; /* Display as block elements */
+    width: 100%; /* Full width */
+    height: 3px; /* Height for the lines */
+    background-color: #333; /* Color of the lines */
+    position: absolute; /* Position absolute for stacking */
+    left: 0; /* Align to left */
+}
+
+.hamburger-icon::before {
+    top: -10px; /* Position the top line */
+}
+
+.hamburger-icon::after {
+    bottom: -10px; /* Position the bottom line */
+}
+
+/* Style for the Dropdown Menu */
+.menu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned absolutely */
+    top: 100%; /* Positioned below the button */
+    left: -200px; /* Align to the left */
+    right: 0px; /* Reset right position */
+    background-color: #BBB2A6; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    z-index: 1000; /* High z-index to appear above other elements */
+    min-width: 200px; /* Set a minimum width for the dropdown */
+    max-width: calc(100vw - 20px); /* Limit max width to avoid going off screen */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Show the dropdown menu when active */
+.menu.active {
+    display: block; /* Show when active */
+}
+
+.menu a {
+    display: block; /* Make links block elements */
+    padding: 10px 15px; /* Padding for clickable area */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+}
+
+.menu a:hover {
+    background-color: #DBAA69; /* Background on hover */
+}
+
+

@@ -8,6 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dropDownMenu.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -23,11 +24,19 @@
                     <h3 class="ml-2 mb-0">Ehitus</h3>
                 </div>
             </a>            
-            <!-- Dropdown Menu Icon -->
-            <div class="d-flex pb-1 align-items-center"> <!-- Add this div to group the dropdown button -->
-                <button class="navbar-toggler border-0" type="button">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger-wrapper position-relative">
+                <button class="navbar-toggler border-0" type="button" id="menu-toggler" style="width: 40px; height: 40px;">
+                    <span class="hamburger-icon"></span>
                 </button>
+
+                <!-- Dropdown Menu -->
+                <div class="menu" id="menu">
+                    <a href="vannituba.html">Vannituba</a>
+                    <a href="fassaad.html">Fassaad</a>
+                    <a href="valgustus.html">Valgustus</a>
+                    <a href="siseviimistlus.html">Siseviimistlus</a>
+                </div>
             </div>
         </div>
     </header>
@@ -84,8 +93,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Footer Section -->
     <footer class="py-4">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
@@ -104,5 +111,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="menuToggle.js"></script>
 </body>
 </html>
